@@ -1,1 +1,1 @@
-# myKataBank
+# myAccountApp
