@@ -22,7 +22,7 @@ public class AccountRepositoryTest {
     private AccountRepositoryImpl accountRepository;
 
     @Test
-    public void when_getAccount_then_succes() throws FunctionalException, NoSuchFieldException {
+    public void when_getAccount_then_succes() throws Exception {
         // GIVEN
         Map<Integer, Account> accountMap = new HashMap<>();
         accountMap.put(111111, Account.builder().balance(100).idAccount(111111).build());
@@ -36,7 +36,7 @@ public class AccountRepositoryTest {
     }
 
     @Test
-    public void when_getAccount_then_failed() throws FunctionalException, NoSuchFieldException {
+    public void when_getAccount_then_failed() throws Exception {
         // GIVEN
         Map<Integer, Account> accountMap = new HashMap<>();
         accountMap.put(111111, Account.builder().balance(100).idAccount(111111).build());
